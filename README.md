@@ -1,7 +1,9 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name : VIGNESH V
+
+Roll no : 21223110062
+
+Date of experiment :11/03/2025
 
 
 
@@ -78,25 +80,106 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
+```
+MOV AX, 1125H
+MOV BX, 2345H
+ADD AX,BX
+MOV [6000H],AX
 
+```
 
 
 ## Output  
- 
+ ![add](https://github.com/user-attachments/assets/4323f43d-9a32-4856-a4cb-03f912265c34)
+
 ## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
-## Multiplication alp 
- ## Output  
+```
+MOV AX,[5000H]
+MOV BX,[5002H]
+SUB AX,BX
+MOV [6010H],AX
 
+```
+## Output  
+![sub](https://github.com/user-attachments/assets/cd0fefcd-49e6-41a2-b9ef-45df441cd876)
+
+## Multiplication alp 
+```
+MOV BX,4444H
+MOV AX,BX
+MOV CX,3333H           
+MOV DX,CX
+MUL DX
+MOV [6020H],AX
+```
+ ## Output  
+ 
+![mul](https://github.com/user-attachments/assets/aee038bf-6570-44a6-84a5-96845d5aa742)
 
 ## Division alp 
-
+```
+MOV AL,70H
+MOV BL,10H
+DIV BL
+MOV [6030h],AL
+```
 ## Output  
+![div](https://github.com/user-attachments/assets/6417f5eb-775d-4ef3-96b9-ec3716e9a3e9)
 
+## Programs For Logical Operation
+## AND Operation of 8 bit ALP
+```
+org 100h
+
+MOV AX,125Bh
+MOV BX,6F67h
+AND AX,BX
+MOV [6000h],CX
+ret
+```
+## Output:
+![image](https://github.com/user-attachments/assets/63c09a5d-ba61-4595-85de-88f99e6572cd)
+
+## OR Operation of 8 bit ALP
+```
+org 100h
+
+MOV AX,[5000h]
+MOV BX,[5002h]
+OR AX,BX  
+MOV [6010h],AX
+ret
+```
+## Output:
+![image](https://github.com/user-attachments/assets/46525010-b313-403f-8e50-56f15aa70052)
+
+## NOT Operation of 8 bit ALP
+```
+org 100h
+MOV BX,4444h
+NOT BX
+MOV [6020h],AX
+ret
+```
+## Output:
+![image](https://github.com/user-attachments/assets/e4ba9493-303d-4a14-978f-b7f126ecff79)
+
+## XOR Operation of 8 bit ALP
+```
+org 100h          
+MOV AX,702H
+MOV BL,10H
+XOR [6030h],AL
+HLT
+ret
+```
+## Output
+![image](https://github.com/user-attachments/assets/f3cd500a-f023-4988-a94d-339763a6f15d)
 
 ## Result :
- 
+Hence,The logiacl opertaion and arithmetic operation has been executed successfully.
+
+
 
 
 
